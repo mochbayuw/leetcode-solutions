@@ -12,7 +12,7 @@ class Solution {
         for ($right = 0; $right < strlen($s); $right++) {
             $char = $s[$right];
             
-            // Jika karakter sudah ada dalam set, geser left sampai karakter itu hilang
+            // Jika karakter ada dalam set, geser left sampai karakter itu hilang
             while (isset($set[$char])) {
                 unset($set[$s[$left]]);
                 $left++;
